@@ -18,7 +18,8 @@ import { ListarProfesionComponent } from './profesion/listar-profesion/listar-pr
 import { CrearProfesionComponent } from './profesion/crear-profesion/crear-profesion.component';
 import { EditarProfesionComponent } from './profesion/editar-profesion/editar-profesion.component';
 import { EliminarProfesionComponent } from './profesion/eliminar-profesion/eliminar-profesion.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,10 @@ import { EliminarProfesionComponent } from './profesion/eliminar-profesion/elimi
   ],
   imports: [
     CommonModule,
-    ParametrizacionRoutingModule
+    ParametrizacionRoutingModule,
+    NgxPaginationModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ParametrizacionModule { }
