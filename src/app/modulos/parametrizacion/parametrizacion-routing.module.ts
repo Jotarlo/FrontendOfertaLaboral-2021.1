@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ValidadorSesionGuard } from 'src/app/guardianes/validador-sesion.guard';
+import { CrearCiudadComponent } from './ciudad/crear-ciudad/crear-ciudad.component';
 import { ListarCiudadComponent } from './ciudad/listar-ciudad/listar-ciudad.component';
 import { CrearDepartamentoComponent } from './departamento/crear-departamento/crear-departamento.component';
 import { EditarDepartamentoComponent } from './departamento/editar-departamento/editar-departamento.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
     path: 'listar-ciudades',
     component: ListarCiudadComponent,
     canActivate: [ValidadorSesionGuard]
+  },
+  {
+    path: 'crear-ciudad',
+    component: CrearCiudadComponent
   },
   {
     path: 'listar-habilidades',

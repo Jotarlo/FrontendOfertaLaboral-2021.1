@@ -26,6 +26,10 @@ const routes: Routes = [
     loadChildren: () => import('./modulos/parametrizacion/parametrizacion.module').then(m => m.ParametrizacionModule)
   },
   {
+    path: 'persona',
+    loadChildren: () => import('./modulos/persona/persona.module').then(m => m.PersonaModule)
+  },
+  {
     path: '**',
     component: Error404Component
   }

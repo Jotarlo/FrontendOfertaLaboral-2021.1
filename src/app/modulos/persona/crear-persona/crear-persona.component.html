@@ -1,0 +1,17 @@
+<form [formGroup] ="fgValidador">
+<div class="row">
+<div class="input-field col s12">
+    <select formControlName="deptoId" (change)="cargarCiudadesPorDepartamento()">
+        <option *ngFor="let d of listaDepartamentos" value="{{d.id}}">{{d.nombre}}</option>
+    </select>
+    <label>Departamentos</label>
+  </div>
+
+  <div class="input-field col s12">
+    <select formControlName="ciudadId">
+        <option *ngFor="let d of listaCiudades" value="{{d.id}}">{{d.nombre}}</option>
+    </select>
+    <label>Ciudades</label>
+  </div>
+</div>
+</form>
